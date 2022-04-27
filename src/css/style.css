@@ -269,9 +269,10 @@ main{
 }
 .block4 {
     width: 100%;
-    height: 268px;
-    background: url(../imj/fon4.jpg) center/cover no-repeat;
+    height: 1068px;
+    background: url(../imj/keis.png) 128% 145%/auto 80% no-repeat, url(../imj/fon4.jpg) center/cover no-repeat;
     text-align: center;
+    
 }
 
 .title__container4 h2 {
@@ -280,7 +281,63 @@ main{
     font-weight: bold;
     background: url(../imj/%D0%A7%D0%B5%D1%80%D1%82%D0%B0%20%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%B0.png) bottom no-repeat;
     padding-bottom: 30px;
+    
 }
+.text4{
+    text-align: left;
+    padding-top: 730px;
+    line-height: 25px;
+    padding-left: 75px;
+    
+    
+}
+.text4 ul li:nth-child(1){
+    font-size: 20px;
+    font-weight: bold;
+    
+}
+.text4 ul li:nth-child(2){
+    font-size: 13px;
+}
+
+.text4 ul li:nth-child(3){
+    font-size: 20px;
+    font-weight: bold;
+}
+.text4 ul li:nth-child(4){
+    font-size: 13px;
+}
+
+.text4 input{
+    height: 30px;
+    width: 190px;
+    text-align: center;
+    border: 2px solid #63b5ae;
+    background: #63b5ae;
+    border-radius: 5px;
+    color: white;
+    margin-bottom: 15px;
+    transform: scale(1);
+  
+}
+.text4 input:active{
+    transform: scale(1.1);
+}
+.text5{
+   text-align: left;
+    margin-left: 370px;
+    margin-top: -167px;
+    margin-right: 79px;
+    line-height: 18px;
+}
+.text5 h3{
+    font-size: 18px;
+    font-weight: bold;
+}
+.text5 h4{
+    margin-top: -44px;
+}
+
 
 .title__container4 h4 {
     padding-top: 34px;
@@ -433,9 +490,8 @@ form h3 {
     line-height: 20px;
     margin-right: 115px;   
 }
-
 .title__container9 h4 a:visited{
-    color: white;
+   color: white;
 }
 
 .block10 {
