@@ -1,54 +1,37 @@
 "use strict"
 
+let siteType, designAnswer, adaptability;
 
-let siteType = prompt("Тип сайта", "0-Сайт визитка, 1-Корпоративный сай, 2-интернет магазин");
-let design = prompt("Дизайн", "3-Уникальный дизайн, 4-Шаблонный дизайн");
-let adaptability = prompt("Адаптивность", "5-Адаптивный, 6-Не адаптивный");
 
-let result = 0;
-
-let deadlines = [
-    "4 дня ",
-    "5 дней ",
-    "6 дней ",
-    "7 дней ",
-    "8 дней ",
-    ];
-let price = [
-    " 4000р ",
-    " 5000р ",
-    " 6000р ",
-    " 7000р ",
-    " 7000р ",
-    ];
-
-function calc() {
-    if (siteType = 0, design = 4, adaptability = 6) {
-        result = deadlines[0] + price[0];
-    } else if (siteType = 0, design = 4, adaptability = 5) {
-        result = deadlines[2] + price[2];
-    } else if (siteType = 0, design = 3, adaptability = 6) {
-        result = deadlines[1] + price[1];
-    } else if (siteType = 0, design = 3, adaptability = 5) {
-        result = deadlines[2] + price[2];
-    } else if (siteType = 1, design = 4, adaptability = 6) {
-        result = deadlines[2] + price[2];
-    } else if (siteType = 1, design = 4, adaptability = 5) {
-        result = deadlines[3] + price[3];
-    } else if (siteType = 1, design = 3, adaptability = 6) {
-        result = deadlines[3] + price[3];
-    } else if (siteType = 1, design = 3, adaptability = 5) {
-        result = deadlines[4] + price[4];
-    } else if (siteType = 2, design = 4, adaptability = 6) {
-        result = deadlines[2] + price[2];
-    } else if (siteType = 2, design = 4, adaptability = 5) {
-        result = deadlines[3] + price[3];
-    } else if (siteType = 2, design = 3, adaptability = 6) {
-        result = deadlines[3] + price[3];
-    } else if (siteType = 2, design = 3, adaptability = 5) {
-        result = deadlines[4] + price[4];
+let calculator = {
+    price: [
+           [300, 500, 1000],
+           [500, 1000, 5000],
+           [1000, 3000, 7000]
+           ],
+    days: [
+           [1, 3, 5],
+           [1, 2, 3],
+           [4, 7, 10]
+           ],
+    run(site, design, adaptive) {
+        let sum = calculator.price[0][site - 2] + calculator.price[1][design - 2] + calculator.price[2][adaptive - 2];
+        let time = calculator.days[0][site - 2] + calculator.days[1][design - 2] + calculator.days[2][adaptive - 2];
+        $('#price').text(sum);
+        $('#days').text(time);
     }
 };
-calc();
 
-alert(result);
+
+function getAnswers() {
+    siteType = $('.siteType').change($(this).val());
+    designAnswer = $('.designAnswer').change($(this).val());
+    adaptability = $('.adaptability').change($(this).val());
+
+    calculator.run(siteType, designAnswer, adaptability);
+}
+getAnswers();
+
+
+
+

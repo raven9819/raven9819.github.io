@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/fotorama.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="css/min.css">
@@ -266,29 +267,38 @@
                                 <div class="col-xl-2 col-lg-3 ">
                                     <h3>ТИП САЙТА</h3>
                                 </div>
-                                <select name="list1" id="list">
-                                    <option value="1" disabled>Выберите пункт...</option>
+                                <select class="siteType" name="list1" id="list">
+                                    <option value="1" selected disabled>Выберите пункт</option>
+                                    <option value="2">Сайт-визитка</option>
+                                    <option value="3">Корпоративный сайт</option>
+                                    <option value="4">Интернет-магазин</option>
                                 </select>
                                 <div class="col-2">
                                     <h3>ДИЗАЙН</h3>
                                 </div>
-                                <select name="list1" id="list">
-                                    <option value="1" disabled>Выберите пункт...</option>
+                                <select class="designAnswer" name="list1" id="list">
+                                    <option value="1" selected disabled>Выберите пункт</option>
+                                    <option value="2">Шаблонный</option>
+                                    <option value="3">Уникальный</option>
+                                    <option value="4">WOW-Дизайн</option>
                                 </select>
                                 <div class="col-3">
                                     <h3>АДАПТИВНОСТЬ</h3>
                                 </div>
-                                <select name="list1" id="list">
-                                    <option value="1" disabled>Выберите пункт...</option>
+                                <select class="adaptability" name="list1" id="list">
+                                    <option value="1" selected disabled>Выберите пункт</option>
+                                    <option value="2">Только ПК</option>
+                                    <option value="3">Только мобильный сайт</option>
+                                    <option value="4">ПК + Мобильный</option>
                                 </select>
                                 <div class="block15 mt-4"> <img src="imj/line.png" alt="">
                                     <div class="col-12 d-flex justify-content-between offst-1 mt-3 line1">
                                         <h3>Сроки</h3>
-                                        <h3 class="mx-5">0</h3>
+                                        <h3 class="mx-5" id="days">0</h3>
                                     </div>
                                     <div class="col-12  d-flex justify-content-between line2">
                                         <h3>Стоимость</h3>
-                                        <h3 class="mx-5">0</h3>
+                                        <h3 class="mx-5" id="price">0</h3>
                                     </div>
                                     <div class="col-xl-2 offset-sm-5 clo-lg-3 col-7 offset-4"><button type="button" class=" button5">Оставить заявку</button></div>
                                 </div>
@@ -300,7 +310,7 @@
         </div>
 
     </section>
-    
+
 
 
 
@@ -317,19 +327,19 @@
 
                     <div class=" menu6">
                         <h2 class="col-12 col-md-3 col-sm-6">
-                            <p><img src="imj/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt=""></p> 120 <br>
+                            <p><img src="imj/%D1%81%D0%BC%D0%B0%D0%B9%D0%BB.png" alt=""></p> <span class="anim6">120</span> <br>
                             <p>СЧАСТЛИВЫХ КЛИЕНТОВ</p>
                         </h2>
                         <h2 class="col-12 col-md-3 col-sm-6">
-                            <p><img src="imj/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt=""> </p> 4,600 <br>
+                            <p><img src="imj/%D1%81%D0%BA%D0%BE%D0%B1%D0%BA%D0%B8.png" alt=""> </p> <span class="anim6">4,600</span> <br>
                             <p>ЧАСОВ ЧАБОТЫ</p>
                         </h2>
                         <h2 class="col-12 col-md-3 col-sm-5">
-                            <p><img src="imj/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt=""></p>340 <br>
+                            <p><img src="imj/%D0%B3%D0%B0%D0%BB%D0%BE%D1%87%D0%BA%D0%B0.png" alt=""></p><span class="anim6">340</span> <br>
                             <p>ПРОЕКТОВ ЗАВЕРШЕНО</p>
                         </h2>
                         <h2 class="col-12 col-md-3 col-sm-6">
-                            <p><img src="imj/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt=""> </p> 23 <br>
+                            <p><img src="imj/%D0%BA%D1%83%D0%B1%D0%BE%D0%BA.png" alt=""> </p><span class="anim6">23</span>  <br>
                             <p>НАГРАД ПОЛУЧЕНО</p>
                         </h2>
                     </div>
@@ -349,35 +359,49 @@
 
 
         <div class="container">
-           <div class="title__container7">
-            <div class="row justify-content-center">
-                <div class="col-lg-2 col-md-3">
-                        <h2>ОТЗЫВЫ <br><img src="imj/feature.png" alt=""></h2>  </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-2 col-md-3">
-                                <img src="imj/%D1%84%D0%BE%D1%82%D0%BA%D0%B01.png" alt="">
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-xl-9 col-12">
-                                   <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit.Duis sed dapibus leo nec omare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at duis sed dapibus leo nec omare diam.</h3>
-                            </div>
-                        </div>
-                        <div class="row justify-content-center">
-                            <div class="col-lg-3 col-md-4">
-                                <h4><span>Михаил</span>,Ген директор ПАО"Газпром".</h4>
-                            </div>
-                        </div>
-                        
-                     
-                        
+            <div class="title__container7">
+                <div class="row justify-content-center">
+                    <div class="col-lg-2 col-md-3">
+                        <h2>ОТЗЫВЫ <br><img src="imj/feature.png" alt=""></h2>
+                    </div>
+                    
 
-                
+                    <div class="fotorama" data-width="100%" data-height="500">
+                        <div class="any" style="background: #fff;">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-2 col-md-3">
+                            <img src="imj/%D1%84%D0%BE%D1%82%D0%BA%D0%B01.png" alt="">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-xl-9 col-12">
+                            <h3>Lorem ipsum dolor sit amet,consectetur adipiscing elit.Duis sed dapibus leo nec omare diam. Sed commodo nibh ante <br> facilisis bibendum dolor feugiat at duis sed dapibus leo nec omare diam.</h3>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-3 col-md-4">
+                            <h4><span>Михаил</span>,Ген директор ПАО"Газпром".</h4>
+                        </div>
+                    </div>
+                       </div>
+                        <div class="any" style="background: #fff;"><strong>Two</strong></div>
+                        <div class="any" style="background: #fff;"><em>Three</em></div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
                 </div>
             </div>
         </div>
     </section>
-
 
 
 
@@ -460,6 +484,8 @@
         }
 
     </script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/fotorama.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/myScript.js"></script>
 </body>

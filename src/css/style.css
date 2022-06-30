@@ -499,7 +499,7 @@ form h3 {
 }
 
 .title__container7 img {
-    padding-top: 45px;
+   
 }
 
 .title__container7 h3 {
@@ -520,7 +520,14 @@ form h3 {
     color: #3d4654;
 }
 
-
+.fotorama .any {
+ text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+ font-family: Georgia, serif;
+ font-size: 72px;
+ text-align: center;
+ height: 181px;
+ padding-top: 100px;
+ }
 
 
 .block8 {
